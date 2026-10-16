@@ -1,0 +1,172 @@
+26/10/09 10:08:54 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/09 10:08:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 1) / 1]                                                                                [Stage 2:>                                                          (0 + 1) / 1]                                                                                
+============================================================
+FILE: Bangalore_AQI_Dataset.csv
+============================================================
+Columns: ['City', 'Date', 'AQI', 'PM2.5', 'PM10', 'NO2', 'SO2', 'CO', 'O3']
+Schema:
+root
+ |-- City: string (nullable = true)
+ |-- Date: string (nullable = true)
+ |-- AQI: integer (nullable = true)
+ |-- PM2.5: double (nullable = true)
+ |-- PM10: double (nullable = true)
+ |-- NO2: double (nullable = true)
+ |-- SO2: double (nullable = true)
+ |-- CO: double (nullable = true)
+ |-- O3: double (nullable = true)
+
+Total records: 2556
+First 5 rows:
++---------+--------+---+-----+-----+-----+-----+----+----+
+|City     |Date    |AQI|PM2.5|PM10 |NO2  |SO2  |CO  |O3  |
++---------+--------+---+-----+-----+-----+-----+----+----+
+|Bangalore|01/01/18|68 |37.4 |73.44|56.44|77.52|0.71|64.6|
+|Bangalore|02/01/18|76 |41.8 |82.08|63.08|86.64|0.8 |72.2|
+|Bangalore|03/01/18|70 |38.5 |75.6 |58.1 |79.8 |0.74|66.5|
+|Bangalore|04/01/18|78 |42.9 |84.24|64.74|88.92|0.82|74.1|
+|Bangalore|05/01/18|82 |45.1 |88.56|68.06|93.48|0.86|77.9|
++---------+--------+---+-----+-----+-----+-----+----+----+
+only showing top 5 rows
+
+
+============================================================
+FILE: Chennai_AQI_Dataset.csv
+============================================================
+Columns: ['City', 'Date', 'AQI', 'PM2.5', 'PM10', 'NO2', 'SO2', 'CO', 'O3']
+Schema:
+root
+ |-- City: string (nullable = true)
+ |-- Date: string (nullable = true)
+ |-- AQI: integer (nullable = true)
+ |-- PM2.5: double (nullable = true)
+ |-- PM10: double (nullable = true)
+ |-- NO2: double (nullable = true)
+ |-- SO2: double (nullable = true)
+ |-- CO: double (nullable = true)
+ |-- O3: double (nullable = true)
+
+Total records: 2551
+First 5 rows:
++-------+--------+---+-----+------+------+------+----+------+
+|City   |Date    |AQI|PM2.5|PM10  |NO2   |SO2   |CO  |O3    |
++-------+--------+---+-----+------+------+------+----+------+
+|Chennai|01/01/18|93 |51.15|100.44|77.19 |106.02|0.98|88.35 |
+|Chennai|02/01/18|100|55.0 |108.0 |83.0  |114.0 |1.05|95.0  |
+|Chennai|03/01/18|81 |44.55|87.48 |67.23 |92.34 |0.85|76.95 |
+|Chennai|04/01/18|169|92.95|182.52|140.27|192.66|1.77|160.55|
+|Chennai|05/01/18|153|84.15|165.24|126.99|174.42|1.61|145.35|
++-------+--------+---+-----+------+------+------+----+------+
+only showing top 5 rows
+
+
+============================================================
+FILE: Delhi_AQI_Dataset.csv
+============================================================
+Columns: ['City', 'Date', 'AQI', 'PM2.5', 'PM10', 'NO2', 'SO2', 'CO', 'O3', '_c9', '_c10']
+Schema:
+root
+ |-- City: string (nullable = true)
+ |-- Date: string (nullable = true)
+ |-- AQI: integer (nullable = true)
+ |-- PM2.5: double (nullable = true)
+ |-- PM10: double (nullable = true)
+ |-- NO2: double (nullable = true)
+ |-- SO2: double (nullable = true)
+ |-- CO: double (nullable = true)
+ |-- O3: double (nullable = true)
+ |-- _c9: string (nullable = true)
+ |-- _c10: string (nullable = true)
+
+Total records: 2191
+First 5 rows:
++-----+--------+---+-----+------+------+------+----+-----+----+----+
+|City |Date    |AQI|PM2.5|PM10  |NO2   |SO2   |CO  |O3   |_c9 |_c10|
++-----+--------+---+-----+------+------+------+----+-----+----+----+
+|Delhi|01/01/18|406|223.3|438.48|336.98|462.84|4.26|385.7|NULL|NULL|
+|Delhi|02/01/18|418|229.9|451.44|346.94|476.52|4.39|397.1|NULL|NULL|
+|Delhi|03/01/18|382|210.1|412.56|317.06|435.48|4.01|362.9|NULL|NULL|
+|Delhi|04/01/18|366|201.3|395.28|303.78|417.24|3.84|347.7|NULL|NULL|
+|Delhi|05/01/18|390|214.5|421.2 |323.7 |444.6 |4.1 |370.5|NULL|NULL|
++-----+--------+---+-----+------+------+------+----+-----+----+----+
+only showing top 5 rows
+
+
+============================================================
+FILE: Hyderabad_AQI_Dataset.csv
+============================================================
+Columns: ['City', 'Date', 'AQI', 'PM2.5', 'PM10', 'NO2', 'SO2', 'CO', 'O3', '_c9', '_c10', '_c11', '_c12', '_c13', '_c14', '_c15', '_c16', '_c17', '_c18', '_c19', '_c20', '_c21']
+Schema:
+root
+ |-- City: string (nullable = true)
+ |-- Date: string (nullable = true)
+ |-- AQI: integer (nullable = true)
+ |-- PM2.5: double (nullable = true)
+ |-- PM10: double (nullable = true)
+ |-- NO2: double (nullable = true)
+ |-- SO2: double (nullable = true)
+ |-- CO: double (nullable = true)
+ |-- O3: double (nullable = true)
+ |-- _c9: string (nullable = true)
+ |-- _c10: string (nullable = true)
+ |-- _c11: string (nullable = true)
+ |-- _c12: string (nullable = true)
+ |-- _c13: string (nullable = true)
+ |-- _c14: string (nullable = true)
+ |-- _c15: string (nullable = true)
+ |-- _c16: string (nullable = true)
+ |-- _c17: string (nullable = true)
+ |-- _c18: string (nullable = true)
+ |-- _c19: string (nullable = true)
+ |-- _c20: string (nullable = true)
+ |-- _c21: string (nullable = true)
+
+Total records: 2556
+First 5 rows:
++---------+--------+---+-----+------+------+------+----+------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+|City     |Date    |AQI|PM2.5|PM10  |NO2   |SO2   |CO  |O3    |_c9 |_c10|_c11|_c12|_c13|_c14|_c15|_c16|_c17|_c18|_c19|_c20|_c21|
++---------+--------+---+-----+------+------+------+----+------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+|Hyderabad|01/01/18|119|65.45|128.52|98.77 |135.66|1.25|113.05|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|
+|Hyderabad|02/01/18|117|64.35|126.36|97.11 |133.38|1.23|111.15|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|
+|Hyderabad|03/01/18|156|85.8 |168.48|129.48|177.84|1.64|148.2 |NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|
+|Hyderabad|04/01/18|169|92.95|182.52|140.27|192.66|1.77|160.55|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|
+|Hyderabad|05/01/18|148|81.4 |159.84|122.84|168.72|1.55|140.6 |NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|NULL|
++---------+--------+---+-----+------+------+------+----+------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+only showing top 5 rows
+
+
+============================================================
+FILE: Mumbai_AQI_Dataset.csv
+============================================================
+Columns: ['City', 'Date', 'AQI', 'PM2.5', 'PM10', 'NO2', 'SO2', 'CO', 'O3']
+Schema:
+root
+ |-- City: string (nullable = true)
+ |-- Date: string (nullable = true)
+ |-- AQI: integer (nullable = true)
+ |-- PM2.5: double (nullable = true)
+ |-- PM10: double (nullable = true)
+ |-- NO2: double (nullable = true)
+ |-- SO2: double (nullable = true)
+ |-- CO: double (nullable = true)
+ |-- O3: double (nullable = true)
+
+Total records: 2188
+First 5 rows:
++------+--------+---+------+------+------+------+----+------+
+|City  |Date    |AQI|PM2.5 |PM10  |NO2   |SO2   |CO  |O3    |
++------+--------+---+------+------+------+------+----+------+
+|Mumbai|01/01/19|194|106.7 |209.52|161.02|221.16|2.04|184.3 |
+|Mumbai|02/01/19|180|99.0  |194.4 |149.4 |205.2 |1.89|171.0 |
+|Mumbai|03/01/19|267|146.85|288.36|221.61|304.38|2.8 |253.65|
+|Mumbai|04/01/19|223|122.65|240.84|185.09|254.22|2.34|211.85|
+|Mumbai|05/01/19|178|97.9  |192.24|147.74|202.92|1.87|169.1 |
++------+--------+---+------+------+------+------+----+------+
+only showing top 5 rows
+
+SUCCESS: The process with PID 2648 (child process of PID 6480) has been terminated.
+SUCCESS: The process with PID 6480 (child process of PID 7816) has been terminated.
+SUCCESS: The process with PID 7816 (child process of PID 4432) has been terminated.

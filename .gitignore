@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Output / large generated files
+output/cleaned_air_quality.csv
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# Spark temp files
+derby.log
+metastore_db/
+
+# Windows temp
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
